@@ -7,7 +7,7 @@ export const useCart=()=>{
     const initalCart=():CartItem[] =>{
         const localStorageCart=localStorage.getItem('cart');
         return localStorageCart ? JSON.parse(localStorageCart) : []
-      }
+    }
       
       const [data] = useState(db);
       const [cart, setCart] = useState(initalCart);
